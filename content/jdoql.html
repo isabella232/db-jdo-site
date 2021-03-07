@@ -56,16 +56,14 @@
     <!-- Coderay syntax formatter -->
     <style type="text/css">
         /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top;line-height:1.45}
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
 table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
+table.CodeRay td.code{padding:0 0 0 .75em}
 .CodeRay .debug{color:#fff !important;background:#000080 !important}
 .CodeRay .annotation{color:#007}
 .CodeRay .attribute-name{color:#000080}
@@ -345,7 +343,7 @@ sorting (the ORDER BY clause in SQL), etc.</p>
 <p><a id="singlestring"></a></p>
 </div>
 <div class="sect2">
-<h3 id="_single_string_jdoql_a_id_single_string_jdoql_a">Single-String JDOQL<a id="Single-String_JDOQL"></a></h3>
+<h3 id="_single_string_jdoql">Single-String JDOQL<a id="Single-String_JDOQL"></a></h3>
 <div class="paragraph">
 <p>In traditional (declarative) JDOQL (JDO 1.0) it was necessary to specify
 the component parts (filter, candidate class, ordering, etc) of the
@@ -385,7 +383,7 @@ all in a single call.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_accessing_fields_a_id_accessing_fields_a">Accessing Fields<a id="Accessing_Fields"></a></h3>
+<h3 id="_accessing_fields">Accessing Fields<a id="Accessing_Fields"></a></h3>
 <div class="paragraph">
 <p>In JDOQL you access fields in the query by referring to the field name.
 For example, if you are querying a class called <em>Product</em> and it has a
@@ -414,7 +412,7 @@ you can either fully-qualify the class name or you can include it in the
 </div>
 </div>
 <div class="sect2">
-<h3 id="_data_types_literals_a_id_data_types_literals_a">Data types : literals<a id="Data_types_:_literals"></a></h3>
+<h3 id="_data_types_literals">Data types : literals<a id="Data_types_:_literals"></a></h3>
 <div class="paragraph">
 <p>JDOQL supports the following literals: IntegerLiteral,
 FloatingPointLiteral, BooleanLiteral, CharacterLiteral, StringLiteral,
@@ -422,7 +420,7 @@ and NullLiteral.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_operators_precedence_a_id_operators_precedence_a">Operators precedence<a id="Operators_precedence"></a></h3>
+<h3 id="_operators_precedence">Operators precedence<a id="Operators_precedence"></a></h3>
 <div class="paragraph">
 <p>The following list describes the operator precedence in JDOQL.</p>
 </div>
@@ -465,7 +463,7 @@ and NullLiteral.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_concatenation_expressions_a_id_concatenation_expressions_a">Concatenation Expressions<a id="Concatenation_Expressions"></a></h3>
+<h3 id="_concatenation_expressions">Concatenation Expressions<a id="Concatenation_Expressions"></a></h3>
 <div class="paragraph">
 <p>The concatenation operator(+) concatenates a String to either another
 String or Number. Concatenations of String or Numbers to null results in
@@ -473,7 +471,7 @@ null.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_example_1_use_of_explicit_parameters_a_id_example_1_use_of_explicit_parameters_a">Example 1 - Use of Explicit Parameters<a id="Example_1_-_Use_of_Explicit_Parameters"></a></h3>
+<h3 id="_example_1_use_of_explicit_parameters">Example 1 - Use of Explicit Parameters<a id="Example_1_-_Use_of_Explicit_Parameters"></a></h3>
 <div class="paragraph">
 <p>Here&#8217;s a simple example for finding the elements of a class with a field
 below a particular threshold level. Here we pass in the threshold value
@@ -527,7 +525,7 @@ List results = (List)query.execute(150.00);</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_example_2_use_of_implicit_parameters_a_id_example_2_use_of_implicit_parameters_a">Example 2 - Use of Implicit Parameters<a id="Example_2_-_Use_of_Implicit_Parameters"></a></h3>
+<h3 id="_example_2_use_of_implicit_parameters">Example 2 - Use of Implicit Parameters<a id="Example_2_-_Use_of_Implicit_Parameters"></a></h3>
 <div class="paragraph">
 <p>Let&#8217;s repeat the previous query but this time using <em>implicit</em>
 parameters.</p>
@@ -554,7 +552,7 @@ a colon (:)</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_example_3_comparison_against_dates_a_id_example_3_comparison_against_dates_a">Example 3 - Comparison against Dates<a id="Example_3_-_Comparison_against_Dates"></a></h3>
+<h3 id="_example_3_comparison_against_dates">Example 3 - Comparison against Dates<a id="Example_3_-_Comparison_against_Dates"></a></h3>
 <div class="paragraph">
 <p>Here&#8217;s another example using the same Product class as above, but this
 time comparing to a Date field. Because we are using a type in our
@@ -584,7 +582,7 @@ List results = (List)query.execute(my_date_limit);</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_example_4_instanceof_a_id_example_4_instanceof_a">Example 4 - Instanceof<a id="Example_4_-_Instanceof"></a></h3>
+<h3 id="_example_4_instanceof">Example 4 - Instanceof<a id="Example_4_-_Instanceof"></a></h3>
 <div class="paragraph">
 <p>This example demonstrates use of the "instanceof" operator. We have a
 class A that has a field "b" of type B and B has subclasses B1, B2, B3.
@@ -633,7 +631,7 @@ List results = (List)query.execute();</pre>
                           <a href="api31/apidocs/index.html" title="Latest Javadocs">Latest Javadocs</a>
           </div>
       </div>
-      <p class="text-center" style="margin-top:16px">&copy; 2005-2020 Apache Software Foundation. All Rights Reserved.</p>
+      <p class="text-center" style="margin-top:16px">&copy; 2005-2021 Apache Software Foundation. All Rights Reserved.</p>
   </div>
   </footer>
 

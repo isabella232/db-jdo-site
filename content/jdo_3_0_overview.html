@@ -56,16 +56,14 @@
     <!-- Coderay syntax formatter -->
     <style type="text/css">
         /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top;line-height:1.45}
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
 table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
+table.CodeRay td.code{padding:0 0 0 .75em}
 .CodeRay .debug{color:#fff !important;background:#000080 !important}
 .CodeRay .annotation{color:#007}
 .CodeRay .attribute-name{color:#000080}
@@ -305,7 +303,7 @@ table.CodeRay td.code>pre{padding:0}
 <h2 id="index">JDO 3.0 Overview<a id="JDO_3.0_Overview"></a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_background_a_id_background_a">Background<a id="Background"></a></h3>
+<h3 id="_background">Background<a id="Background"></a></h3>
 <div class="paragraph">
 <p>Java Data Objects (JDO) is a specification begun in 2000, with 2 major
 releases JDO1 (2002 under JSR0012) and JDO2 (2006 under JSR0243). It was
@@ -322,7 +320,7 @@ locking of objects when read.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_metadata_api_a_id_metadata_api_a">Metadata API<a id="Metadata_API"></a></h3>
+<h3 id="_metadata_api">Metadata API<a id="Metadata_API"></a></h3>
 <div class="paragraph">
 <p>To persist Java objects you need to specify which classes are
 persistable, and how they are persisted. This was traditionally handled
@@ -422,7 +420,7 @@ PersistenceManagerFactory, like this</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_enhancer_api_a_id_enhancer_api_a">Enhancer API<a id="Enhancer_API"></a></h3>
+<h3 id="_enhancer_api">Enhancer API<a id="Enhancer_API"></a></h3>
 <div class="paragraph">
 <p>JDO implementations typically (but aren&#8217;t compelled to) include a
 bytecode enhancement step, allowing for efficient change detection of
@@ -475,7 +473,7 @@ enhancer.enhance();</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_query_cancel_timeout_api_a_id_query_canceltimeout_api_a">Query Cancel/Timeout API<a id="Query_CancelTimeout_API"></a></h3>
+<h3 id="_query_canceltimeout_api">Query Cancel/Timeout API<a id="Query_CancelTimeout_API"></a></h3>
 <div class="paragraph">
 <p>On occasions a query may be inefficient, or may suffer from problems in
 the underlying datastore, and so we don&#8217;t want to affect the
@@ -498,7 +496,7 @@ timeout.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_control_of_read_objects_locking_a_id_control_of_read_objects_locking_a">Control of read objects locking<a id="Control_of_read_objects_locking"></a></h3>
+<h3 id="_control_of_read_objects_locking">Control of read objects locking<a id="Control_of_read_objects_locking"></a></h3>
 <div class="paragraph">
 <p>When we are using datastore (pessimistic) transactions it often doesn&#8217;t
 make sense to just lock all objects read in the transaction. For this
@@ -561,7 +559,7 @@ Boolean getSerializeRead();</pre>
                           <a href="api31/apidocs/index.html" title="Latest Javadocs">Latest Javadocs</a>
           </div>
       </div>
-      <p class="text-center" style="margin-top:16px">&copy; 2005-2020 Apache Software Foundation. All Rights Reserved.</p>
+      <p class="text-center" style="margin-top:16px">&copy; 2005-2021 Apache Software Foundation. All Rights Reserved.</p>
   </div>
   </footer>
 

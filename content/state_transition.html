@@ -56,16 +56,14 @@
     <!-- Coderay syntax formatter -->
     <style type="text/css">
         /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top;line-height:1.45}
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
 table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
+table.CodeRay td.code{padding:0 0 0 .75em}
 .CodeRay .debug{color:#fff !important;background:#000080 !important}
 .CodeRay .annotation{color:#007}
 .CodeRay .attribute-name{color:#000080}
@@ -316,7 +314,7 @@ back.</p>
 <div class="paragraph">
 <p>The various lifecycle states supported by JDO are shown below.</p>
 </div>
-<table class="tableblock frame-all grid-cols spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -399,7 +397,7 @@ instance whose values have been changed since detaching.</p></td>
 </tbody>
 </table>
 <div class="sect2">
-<h3 id="_detecting_object_state_a_id_detecting_object_state_a">Detecting Object State<a id="Detecting_Object_State"></a></h3>
+<h3 id="_detecting_object_state">Detecting Object State<a id="Detecting_Object_State"></a></h3>
 <div class="paragraph">
 <p>JDO provides a class <a href="jdohelper.html">JDOHelper</a> that allows you to
 interrogate the object state via its attributes (isPersistent(),
@@ -416,7 +414,7 @@ also provide a method that gives the full object state.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_persisting_an_object_a_id_persisting_an_object_a">Persisting an object<a id="Persisting_an_object"></a></h3>
+<h3 id="_persisting_an_object">Persisting an object<a id="Persisting_an_object"></a></h3>
 <div class="paragraph">
 <p>The most basic thing you can do with JDO is persist an object. The
 following code is an example of how you can do this</p>
@@ -455,7 +453,7 @@ started. The following diagram shows this graphically</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_updating_an_object_a_id_updating_an_object_a">Updating an object<a id="Updating_an_object"></a></h3>
+<h3 id="_updating_an_object">Updating an object<a id="Updating_an_object"></a></h3>
 <div class="paragraph">
 <p>When you have persisted objects you need to update them. The following
 code is an example of how you can do this</p>
@@ -495,7 +493,7 @@ The following diagram shows this graphically</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_deleting_an_object_a_id_deleting_an_object_a">Deleting an object<a id="Deleting_an_object"></a></h3>
+<h3 id="_deleting_an_object">Deleting an object<a id="Deleting_an_object"></a></h3>
 <div class="paragraph">
 <p>When you no longer need an object persisted, you can delete it. The
 following code is an example of how you can do this</p>
@@ -536,7 +534,7 @@ this graphically</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_possible_state_transitions_a_id_possible_state_transitions_a">Possible state transitions<a id="Possible_state_transitions"></a></h3>
+<h3 id="_possible_state_transitions">Possible state transitions<a id="Possible_state_transitions"></a></h3>
 <div class="paragraph">
 <p>The following diagram shows the state transitions possible with JDO.</p>
 </div>
@@ -575,7 +573,7 @@ this graphically</p>
                           <a href="api31/apidocs/index.html" title="Latest Javadocs">Latest Javadocs</a>
           </div>
       </div>
-      <p class="text-center" style="margin-top:16px">&copy; 2005-2020 Apache Software Foundation. All Rights Reserved.</p>
+      <p class="text-center" style="margin-top:16px">&copy; 2005-2021 Apache Software Foundation. All Rights Reserved.</p>
   </div>
   </footer>
 

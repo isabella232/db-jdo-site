@@ -56,16 +56,14 @@
     <!-- Coderay syntax formatter -->
     <style type="text/css">
         /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top;line-height:1.45}
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
 table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
+table.CodeRay td.code{padding:0 0 0 .75em}
 .CodeRay .debug{color:#fff !important;background:#000080 !important}
 .CodeRay .annotation{color:#007}
 .CodeRay .attribute-name{color:#000080}
@@ -312,7 +310,7 @@ transparent persistence, and so needs to present the same interface and
 exceptions whatever the state an object has.</p>
 </div>
 <div class="sect2">
-<h3 id="_jdoexception_a_id_jdoexception_a">JDOException<a id="JDOException"></a></h3>
+<h3 id="_jdoexception">JDOException<a id="JDOException"></a></h3>
 <div class="paragraph">
 <p>This is the base class for all JDO exceptions. It is a subclass of
 RuntimeException, and need not be declared or caught.</p>
@@ -322,11 +320,11 @@ RuntimeException, and need not be declared or caught.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_can_retry_exceptions_a_id_can_retry_exceptions_a">Can Retry Exceptions<a id="Can_Retry_Exceptions"></a></h3>
+<h3 id="_can_retry_exceptions">Can Retry Exceptions<a id="Can_Retry_Exceptions"></a></h3>
 <div class="paragraph">
 <p><span class="image"><img src="images/jdo_exception_canretry.jpg" alt="JDO Can Retry Exceptions"></span></p>
 </div>
-<table class="tableblock frame-all grid-cols spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -375,11 +373,11 @@ feature.</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_fatal_exceptions_a_id_fatal_exceptions_a">Fatal Exceptions<a id="Fatal_Exceptions"></a></h3>
+<h3 id="_fatal_exceptions">Fatal Exceptions<a id="Fatal_Exceptions"></a></h3>
 <div class="paragraph">
 <p><span class="image"><img src="images/jdo_exception_fatal.jpg" alt="JDO Fatal Exceptions"></span></p>
 </div>
-<table class="tableblock frame-all grid-cols spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -460,7 +458,7 @@ to the detached instance.</p></td>
                           <a href="api31/apidocs/index.html" title="Latest Javadocs">Latest Javadocs</a>
           </div>
       </div>
-      <p class="text-center" style="margin-top:16px">&copy; 2005-2020 Apache Software Foundation. All Rights Reserved.</p>
+      <p class="text-center" style="margin-top:16px">&copy; 2005-2021 Apache Software Foundation. All Rights Reserved.</p>
   </div>
   </footer>
 

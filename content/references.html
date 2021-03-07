@@ -56,16 +56,14 @@
     <!-- Coderay syntax formatter -->
     <style type="text/css">
         /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top;line-height:1.45}
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
 table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
+table.CodeRay td.code{padding:0 0 0 .75em}
 .CodeRay .debug{color:#fff !important;background:#000080 !important}
 .CodeRay .annotation{color:#007}
 .CodeRay .attribute-name{color:#000080}
@@ -305,7 +303,7 @@ table.CodeRay td.code>pre{padding:0}
 <h2 id="index">JDO References<a id="JDO_References"></a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_articles_a_id_articles_a">Articles<a id="Articles"></a></h3>
+<h3 id="_articles">Articles<a id="Articles"></a></h3>
 <div class="paragraph">
 <p>There have been several articles about JDO on various websites. Some are
 listed below</p>
@@ -355,7 +353,7 @@ Apache Derby</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_books_a_id_books_a">Books<a id="Books"></a></h3>
+<h3 id="_books">Books<a id="Books"></a></h3>
 <div class="paragraph">
 <p>A number of books covering JDO are available. Some are listed below</p>
 </div>
@@ -366,8 +364,7 @@ Apache Derby</a></p>
 Objects</span>] by Craig Russell and David Jordan. Publisher: O&#8217;Reilly</p>
 </li>
 <li>
-<p><a href="http://www.phptr.com/bookstore/product.asp?isbn=0131407317&amp;rl=1"><span class="underline">Core
-Java Data Objects</span></a> by Sameer Tyagi, Michael Vorburger, Keiron McCammon,
+<p><a href="http://www.phptr.com/bookstore/product.asp?isbn=0131407317&amp;rl=1"><span class="underline">Core</a> by Sameer Tyagi, Michael Vorburger, Keiron McCammon,
 Heiko Bobzin. Publisher: Prentice Hall</p>
 </li>
 </ul>
@@ -404,7 +401,7 @@ Heiko Bobzin. Publisher: Prentice Hall</p>
                           <a href="api31/apidocs/index.html" title="Latest Javadocs">Latest Javadocs</a>
           </div>
       </div>
-      <p class="text-center" style="margin-top:16px">&copy; 2005-2020 Apache Software Foundation. All Rights Reserved.</p>
+      <p class="text-center" style="margin-top:16px">&copy; 2005-2021 Apache Software Foundation. All Rights Reserved.</p>
   </div>
   </footer>
 

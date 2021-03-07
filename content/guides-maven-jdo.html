@@ -56,16 +56,14 @@
     <!-- Coderay syntax formatter -->
     <style type="text/css">
         /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top;line-height:1.45}
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
 table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
+table.CodeRay td.code{padding:0 0 0 .75em}
 .CodeRay .debug{color:#fff !important;background:#000080 !important}
 .CodeRay .annotation{color:#007}
 .CodeRay .attribute-name{color:#000080}
@@ -308,7 +306,7 @@ table.CodeRay td.code>pre{padding:0}
 <p>By <a href="mailto:andy@jpox.org">Andy Jefferson</a></p>
 </div>
 <div class="sect2">
-<h3 id="_background_maven_a_id_background_maven_a">Background - Maven<a id="Background_-_Maven"></a></h3>
+<h3 id="_background_maven">Background - Maven<a id="Background_-_Maven"></a></h3>
 <div class="paragraph">
 <p><a href="http://maven.apache.org">Maven</a> is a tool for managing and building
 projects providing an alternative to the accepted
@@ -339,7 +337,7 @@ end result.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_integrating_jdo_with_maven_a_id_integrating_jdo_with_maven_a">Integrating JDO with Maven<a id="Integrating_JDO_with_Maven"></a></h3>
+<h3 id="_integrating_jdo_with_maven">Integrating JDO with Maven<a id="Integrating_JDO_with_Maven"></a></h3>
 <div class="paragraph">
 <p>In developing a JDO system, the developer has many concerns - not least
 the likes of object-relationship mapping - and should, as far as
@@ -354,7 +352,7 @@ chained off the existing Java compilation task.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_anatomy_of_a_maven_jdo_plugin_a_id_anatomy_of_a_maven_jdo_plugin_a">Anatomy of a Maven JDO plugin<a id="Anatomy_of_a_Maven_JDO_plugin"></a></h3>
+<h3 id="_anatomy_of_a_maven_jdo_plugin">Anatomy of a Maven JDO plugin<a id="Anatomy_of_a_Maven_JDO_plugin"></a></h3>
 <div class="paragraph">
 <p>A Maven plugin can use a variety of languages, however most commonly
 utilises <a href="http://jakarta.apache.org/commons/jelly/">Jelly scripting
@@ -477,7 +475,7 @@ goals as they wish to fulfil their users requirements.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_using_a_maven_jdo_plugin_a_id_using_a_maven_jdo_plugin_a">Using a Maven JDO plugin<a id="Using_a_Maven_JDO_plugin"></a></h3>
+<h3 id="_using_a_maven_jdo_plugin">Using a Maven JDO plugin<a id="Using_a_Maven_JDO_plugin"></a></h3>
 <div class="paragraph">
 <p>Using the JPOX Maven plugin as an example, the basic enhancement process
 could be invoked as follows:</p>
@@ -572,7 +570,7 @@ follows:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_conclusion_a_id_conclusion_a">Conclusion<a id="Conclusion"></a></h3>
+<h3 id="_conclusion">Conclusion<a id="Conclusion"></a></h3>
 <div class="paragraph">
 <p>This article has attempted to give a feel for both the operation of
 Maven, and how to integrate JDO into a Maven project. The various Maven
@@ -592,7 +590,7 @@ site</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_about_the_author_a_id_about_the_author_a">About the author<a id="About_the_author"></a></h3>
+<h3 id="_about_the_author">About the author<a id="About_the_author"></a></h3>
 <div class="paragraph">
 <p>Andy Jefferson is an independent software consultant who has been
 working in the IT industry for more than 15 years, primarily in the
@@ -630,7 +628,7 @@ projects, primarily JPOX, and Apache JDO, and a member of the JSR243
                           <a href="api31/apidocs/index.html" title="Latest Javadocs">Latest Javadocs</a>
           </div>
       </div>
-      <p class="text-center" style="margin-top:16px">&copy; 2005-2020 Apache Software Foundation. All Rights Reserved.</p>
+      <p class="text-center" style="margin-top:16px">&copy; 2005-2021 Apache Software Foundation. All Rights Reserved.</p>
   </div>
   </footer>
 

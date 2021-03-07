@@ -56,16 +56,14 @@
     <!-- Coderay syntax formatter -->
     <style type="text/css">
         /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top;line-height:1.45}
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
 table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
+table.CodeRay td.code{padding:0 0 0 .75em}
 .CodeRay .debug{color:#fff !important;background:#000080 !important}
 .CodeRay .annotation{color:#007}
 .CodeRay .attribute-name{color:#000080}
@@ -311,7 +309,7 @@ JDO persistence process. This is known as <strong>JDOHelper</strong>
 <a href="api20/apidocs/javax/jdo/JDOHelper.html"><span class="image"><img src="images/javadoc.png" alt="image"></span></a></p>
 </div>
 <div class="sect2">
-<h3 id="_persistencemanagerfactory_methods_a_id_persistencemanagerfactory_methods_a">PersistenceManagerFactory methods<a id="PersistenceManagerFactory_methods"></a></h3>
+<h3 id="_persistencemanagerfactory_methods">PersistenceManagerFactory methods<a id="PersistenceManagerFactory_methods"></a></h3>
 <div class="paragraph">
 <p>The methods in JDOHelper can be split into categories. Here we start
 with the methods for creating the starting point for persistence, the
@@ -367,7 +365,7 @@ creates a PMF given an InputStream and a ClassLoader to use</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_persistence_methods_a_id_persistence_methods_a">Persistence methods<a id="Persistence_methods"></a></h3>
+<h3 id="_persistence_methods">Persistence methods<a id="Persistence_methods"></a></h3>
 <div class="paragraph">
 <p>Now we move onto the operations for persistence.</p>
 </div>
@@ -405,7 +403,7 @@ passed objects (if persistent)</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_lifecycle_methods_a_id_lifecycle_methods_a">Lifecycle methods<a id="Lifecycle_methods"></a></h3>
+<h3 id="_lifecycle_methods">Lifecycle methods<a id="Lifecycle_methods"></a></h3>
 <div class="paragraph">
 <p>Now we move onto lifecycle operations</p>
 </div>
@@ -467,7 +465,7 @@ detached</p>
                           <a href="api31/apidocs/index.html" title="Latest Javadocs">Latest Javadocs</a>
           </div>
       </div>
-      <p class="text-center" style="margin-top:16px">&copy; 2005-2020 Apache Software Foundation. All Rights Reserved.</p>
+      <p class="text-center" style="margin-top:16px">&copy; 2005-2021 Apache Software Foundation. All Rights Reserved.</p>
   </div>
   </footer>
 

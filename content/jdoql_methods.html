@@ -56,16 +56,14 @@
     <!-- Coderay syntax formatter -->
     <style type="text/css">
         /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top;line-height:1.45}
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
 table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
+table.CodeRay td.code{padding:0 0 0 .75em}
 .CodeRay .debug{color:#fff !important;background:#000080 !important}
 .CodeRay .annotation{color:#007}
 .CodeRay .attribute-name{color:#000080}
@@ -314,8 +312,8 @@ the ones that are available are typically of much use.</p>
 <p><br></p>
 </div>
 <div class="sect2">
-<h3 id="_string_methods_a_id_string_methods_a">String Methods<a id="String_Methods"></a></h3>
-<table class="tableblock frame-all grid-cols spread">
+<h3 id="_string_methods">String Methods<a id="String_Methods"></a></h3>
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -432,8 +430,8 @@ List results = (List)query.execute();</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_collection_methods_a_id_collection_methods_a">Collection Methods<a id="Collection_Methods"></a></h3>
-<table class="tableblock frame-all grid-cols spread">
+<h3 id="_collection_methods">Collection Methods<a id="Collection_Methods"></a></h3>
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -485,8 +483,8 @@ List results = (List)query.execute();</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_list_methods_a_id_list_methods_a">List Methods<a id="List_Methods"></a></h3>
-<table class="tableblock frame-all grid-cols spread">
+<h3 id="_list_methods">List Methods<a id="List_Methods"></a></h3>
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -510,8 +508,8 @@ List results = (List)query.execute();</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_map_methods_a_id_map_methods_a">Map Methods<a id="Map_Methods"></a></h3>
-<table class="tableblock frame-all grid-cols spread">
+<h3 id="_map_methods">Map Methods<a id="Map_Methods"></a></h3>
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -570,8 +568,8 @@ List results = (List)query.execute();</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_temporal_methods_a_id_temporal_methods_a">Temporal Methods<a id="Temporal_Methods"></a></h3>
-<table class="tableblock frame-all grid-cols spread">
+<h3 id="_temporal_methods">Temporal Methods<a id="Temporal_Methods"></a></h3>
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -614,8 +612,8 @@ List results = (List)query.execute();</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_enum_methods_a_id_enum_methods_a">Enum Methods<a id="Enum_Methods"></a></h3>
-<table class="tableblock frame-all grid-cols spread">
+<h3 id="_enum_methods">Enum Methods<a id="Enum_Methods"></a></h3>
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -642,8 +640,8 @@ List results = (List)query.execute();</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_other_methods_a_id_other_methods_a">Other Methods<a id="Other_Methods"></a></h3>
-<table class="tableblock frame-all grid-cols spread">
+<h3 id="_other_methods">Other Methods<a id="Other_Methods"></a></h3>
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -716,7 +714,7 @@ persistent object</p></td>
                           <a href="api31/apidocs/index.html" title="Latest Javadocs">Latest Javadocs</a>
           </div>
       </div>
-      <p class="text-center" style="margin-top:16px">&copy; 2005-2020 Apache Software Foundation. All Rights Reserved.</p>
+      <p class="text-center" style="margin-top:16px">&copy; 2005-2021 Apache Software Foundation. All Rights Reserved.</p>
   </div>
   </footer>
 

@@ -56,16 +56,14 @@
     <!-- Coderay syntax formatter -->
     <style type="text/css">
         /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top;line-height:1.45}
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
 table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
+table.CodeRay td.code{padding:0 0 0 .75em}
 .CodeRay .debug{color:#fff !important;background:#000080 !important}
 .CodeRay .annotation{color:#007}
 .CodeRay .attribute-name{color:#000080}
@@ -333,7 +331,7 @@ also be a Collection, that contains other objects.</p>
 <p><br></p>
 </div>
 <div class="sect2">
-<h3 id="_first_class_fco_types_a_id_first_class_fco_types_a">First-Class (FCO) Types<a id="First-Class_FCO_Types"></a></h3>
+<h3 id="_first_class_fco_types">First-Class (FCO) Types<a id="First-Class_FCO_Types"></a></h3>
 <div class="paragraph">
 <p>JDO requires objects that are <strong>PersistenceCapable</strong> to be <strong>FCO</strong>. In
 addition it supports persisting fields of Interface or java.lang.Object
@@ -345,7 +343,7 @@ objects).</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_second_class_sco_types_a_id_second_class_sco_types_a">Second-Class (SCO) Types<a id="Second-Class_SCO_Types"></a></h3>
+<h3 id="_second_class_sco_types">Second-Class (SCO) Types<a id="Second-Class_SCO_Types"></a></h3>
 <div class="paragraph">
 <p>The table below shows the supported <strong>SCO</strong> java types in JDO2. The table
 also shows the default-fetch-group (DFG) setting for that Java type (so
@@ -355,7 +353,7 @@ field of that type), whether the field is persisted by default (if it is
 to the field for it to be persisted by JDO), and whether the java type
 can be used as part of the primary key.</p>
 </div>
-<table class="tableblock frame-all grid-cols spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -804,7 +802,7 @@ can be used as part of the primary key.</p>
                           <a href="api31/apidocs/index.html" title="Latest Javadocs">Latest Javadocs</a>
           </div>
       </div>
-      <p class="text-center" style="margin-top:16px">&copy; 2005-2020 Apache Software Foundation. All Rights Reserved.</p>
+      <p class="text-center" style="margin-top:16px">&copy; 2005-2021 Apache Software Foundation. All Rights Reserved.</p>
   </div>
   </footer>
 
